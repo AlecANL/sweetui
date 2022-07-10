@@ -1,4 +1,6 @@
-# Sweetui
+# Sweetui - Components Library
+
+[![Github Workflow Status](https://img.shields.io/github/workflow/status/AlecANL/sweetui/Release)]
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 

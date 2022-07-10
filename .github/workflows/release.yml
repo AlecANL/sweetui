@@ -1,4 +1,4 @@
-name: CI Release SweetUI ComponentsLibrary
+name: Release
 on:
   push:
     branches:
@@ -21,3 +21,20 @@ jobs:
         run: yarn test:ci
       - name: Build storybook
         run: yarn build-storybook
+  coverage:
+    name: Coverage
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Setup Node.js v16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Run coverage test
+        run: yarn test:coverage
+      - name: Upload coverage
+        uses: codecov/codecov-action@v1
