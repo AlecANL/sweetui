@@ -1,6 +1,6 @@
 # Sweetui - Components Library
 
-[![Github Workflow Status](https://img.shields.io/github/workflow/status/AlecANL/sweetui/Release)]
+[![Github Workflow Status]((https://img.shields.io/github/workflow/status/AlecANL/sweetui/Release)](https://github.com/AlecANL/sweetui/actions/workflows/release.yml) [![storybook](https://raw.githubusercontent.com/storybooks/brand/main/badge/badge-storybook.svg)](https://github.com/storybooks/storybook)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 

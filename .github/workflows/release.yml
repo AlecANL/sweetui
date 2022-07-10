@@ -38,3 +38,26 @@ jobs:
         run: yarn test:coverage
       - name: Upload coverage
         uses: codecov/codecov-action@v1
+  visual:
+    name: Visual Testing
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Setup Node.js V16
+        uses: actions/setup-node@v2
+        width:
+          node-version: 16
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+      - name: Build storybook
+        run: yarn build:storybook
+      - name: Publish in chromatic
+        uses: chromaui/action@v1
+        width:
+          token: ${{ secrets.TOKEN_GITHUB }}
+          token: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: "storybook-static"
