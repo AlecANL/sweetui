@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Setup Node.js V16
         uses: actions/setup-node@v2
-        width:
+        with:
           node-version: 16
       - name: Install dependencies
         run: yarn install --frozen-lockfile
