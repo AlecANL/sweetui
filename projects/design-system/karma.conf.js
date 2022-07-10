@@ -28,7 +28,12 @@ module.exports = function (config) {
     coverageReporter: {
       dir: require("path").join(__dirname, "../../coverage/design-system"),
       subdir: ".",
-      reporters: [{ type: "html" }, { type: "text-summary" }],
+      reporters: [
+        { type: "html" },
+        { type: "text-summary" },
+        { type: "lcovonly" },
+        { type: "json" },
+      ],
     },
     reporters: ["mocha"],
     mochaReporter: {
