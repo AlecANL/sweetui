@@ -1,10 +1,6 @@
 {
   "extends": "../projects/design-system/tsconfig.lib.json",
   "compilerOptions": {
-    "baseUrl": "./",
-    "paths": {
-      "@components/*": ["projects/design-system/src/lib/components/*"]
-    },
     "types": ["node"],
     "allowSyntheticDefaultImports": true
   },

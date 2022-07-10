@@ -1,7 +1,6 @@
 import { componentWrapperDecorator } from '@storybook/angular';
 import { Story, Meta } from '@storybook/angular/types-6-0';
-
-import { ButtonComponent } from '@components/sweetui-button/button/button.component';
+import { ButtonComponent } from '../projects/design-system/src/lib/components/sweetui-button/button/button.component';
 
 export default {
   title: 'Components/Button',

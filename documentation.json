@@ -1,0 +1,815 @@
+{
+    "pipes": [],
+    "interfaces": [],
+    "injectables": [
+        {
+            "name": "DesignSystemService",
+            "id": "injectable-DesignSystemService-e58838875b3516a1d363f2aa39721fbb8a622886c3c578e71cbc38eb5511c3e535fbbfb712a3348a0b4ec6c1e16d9cac3164d23c7ceaca48221a18a8ffa318af",
+            "file": "projects/design-system/src/lib/design-system.service.ts",
+            "properties": [],
+            "methods": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "description": "",
+            "rawdescription": "\n",
+            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class DesignSystemService {\n\n  constructor() { }\n}\n",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 6
+            },
+            "type": "injectable"
+        }
+    ],
+    "guards": [],
+    "interceptors": [],
+    "classes": [],
+    "directives": [],
+    "components": [
+        {
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-3e365365bb8329ff020c1137ae24eaac9a0c56b097d9a5d1cea25293f1342b8f2dbb3f507b4b1a5a2429d30638484f3eb8eb4e59eacb0c3886d8f54441c7e4af",
+            "file": "projects/design-system/src/lib/components/sweetui-button/button/button.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "sweetui-button",
+            "styleUrls": [
+                "./button.component.css"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./button.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "color",
+                    "defaultValue": "'default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "\"default\" | \"primary\" | \"secondary\" | \"success\" | \"warning\" | \"error\"",
+                    "decorators": []
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\n\tThe element's unique identifier. See MDN\n",
+                    "description": "<div><pre class=\"line-numbers\"><code class=\"language-none\">The element&#39;s unique identifier. See MDN</code></pre></div>",
+                    "line": 15,
+                    "type": "string | null",
+                    "decorators": []
+                },
+                {
+                    "name": "isDisabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nButton should be disabled?\n",
+                    "description": "<p>Button should be disabled?</p>\n",
+                    "line": 40,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 884,
+                            "end": 897,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 885,
+                                "end": 893,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 47,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'default'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 35,
+                    "type": "\"small\" | \"medium\" | \"large\" | \"default\" | \"auto\"",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat button type to use\n",
+                    "description": "<p>What button type to use</p>\n",
+                    "line": 52,
+                    "type": "\"button\" | \"submit\" | \"reset\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 57,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "handleClick",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "MouseEvent",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 59,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "MouseEvent",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 11,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';\n\n@Component({\n  selector: 'sweetui-button',\n  templateUrl: './button.component.html',\n  styleUrls: ['./button.component.css'],\n})\nexport class ButtonComponent implements OnInit {\n  constructor() {}\n\n  ngOnInit(): void {}\n  /**\n   * \tThe element's unique identifier. See MDN\n   */\n  @Input() id: string | null = null;\n\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input() color:\n    | 'default'\n    | 'primary'\n    | 'secondary'\n    | 'success'\n    | 'warning'\n    | 'error' = 'default';\n\n  /**\n   * Base color to Button\n   */\n\n  /**\n   * How large should the button be?\n   */\n  @Input() size: 'small' | 'medium' | 'large' | 'default' | 'auto' = 'default';\n\n  /**\n   * Button should be disabled?\n   */\n  @Input() isDisabled: boolean = false;\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input() label = 'Button';\n\n  /**\n   * What button type to use\n   */\n  @Input() type: 'button' | 'submit' | 'reset' = 'button';\n\n  /**\n   * Optional click handler\n   */\n  @Output() onClick = new EventEmitter<Event>();\n\n  handleClick($event: MouseEvent) {\n    this.onClick.emit($event);\n  }\n\n  public get className(): string[] {\n    const mode = `type--${this.color}`;\n\n    return [\n      'button sweetui-button-size sweetui-button-color',\n      `sweetui-button--${this.size}`,\n      mode,\n    ];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".sweetui-button-size {\n  --sweetui-inlineSize-xs: 9rem;\n  --sweetui-inlineSize-md: 12rem;\n  --sweetui-inlineSize-base: 14rem;\n  --sweetui-inlineSize-lg: 15rem;\n  --sweetui-inlineSize-xl: 18rem;\n  --sweetui-fontSize-xs: 0.875rem;\n  --sweetui-fontSize-base: 1rem;\n  --sweetui-fontSize-sm: 1.25rem;\n  --sweetui-fontSize-md: 1.5rem;\n  --sweetui-fontSize-lg: 2.25rem;\n  --gray: #fff;\n}\n\n.sweetui-button-color {\n  --light-gray400: #eaeaea;\n  --light-gray500: #a2a2a2;\n  --dark-gray400: #666666;\n  --dark-gray500: #333333;\n  --just-white: #fff;\n  --primary: #0070f3;\n  --secondary: #7928ca;\n  --success: #17c964;\n  --warning: #f5a623;\n  --error: #f21361;\n}\n\n.button {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 0.5rem;\n  font-family: \"Nunito Sans\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 0.75rem;\n  cursor: pointer;\n  line-height: 1;\n  inline-size: auto;\n}\n.button:not(:disabled):active {\n  transform: scale(0.98);\n}\n.button:disabled {\n  color: var(--light-gray500);\n  background-color: var(--light-gray400);\n  font-size: var(--sweet-fontSize-base);\n  cursor: not-allowed;\n}\n.type--default {\n  color: var(--just-white);\n  background-color: var(--primary);\n}\n.type--primary {\n  color: var(--just-white);\n  background-color: var(--primary);\n}\n.type--secondary {\n  color: var(--just-white);\n  background-color: var(--secondary);\n}\n\n.type--success {\n  color: var(--just-white);\n  background-color: var(--success);\n}\n\n.type--error {\n  color: var(--just-white);\n  background-color: var(--error);\n}\n\n.type--warning {\n  color: var(--just-white);\n  background-color: var(--warning);\n}\n\n.sweetui-button--small {\n  font-size: var(--sweet-fontSize-xs);\n  min-inline-size: var(--sweetui-inlineSize-xs);\n  padding: 10px 16px;\n}\n.sweetui-button--default {\n  font-size: var(--sweetui-fontSize-base);\n  min-inline-size: var(--sweetui-inlineSize-base);\n  line-height: 2.5rem;\n  padding-inline: 20px;\n}\n.sweetui-button--medium {\n  font-size: var(--sweetui-fontSize-md);\n  min-inline-size: var(--sweetui-inlineSize-md);\n  padding: 11px 20px;\n}\n.sweetui-button--large {\n  font-size: var(--sweetui-fontSize-md);\n  min-inline-size: var(--sweetui-inlineSize-lg);\n  padding-inline: 24px;\n  line-height: 2.75rem;\n}\n.sweetui-button--extra-large {\n  font-size: var(--sweet-fontSize-sm);\n  min-inline-size: var(--sweetui-inlineSize-xl);\n  line-height: 3.5rem;\n  padding-inline: 20px;\n}\n\n.sweetui-button--auto {\n  font-size: var(--sweet-fontSize-base);\n  min-inline-size: min-content;\n  line-height: 2.5rem;\n  padding-inline: 1.25rem;\n}\n",
+                    "styleUrl": "./button.component.css"
+                }
+            ],
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 8
+            },
+            "implements": [
+                "OnInit"
+            ],
+            "accessors": {
+                "className": {
+                    "name": "className",
+                    "getSignature": {
+                        "name": "className",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 63
+                    }
+                }
+            },
+            "templateData": "<button\n  [id]=\"id ? id : ''\"\n  [disabled]=\"isDisabled\"\n  [type]=\"type\"\n  (click)=\"handleClick($event)\"\n  [ngClass]=\"className\"\n>\n  <span> {{ label }} </span>\n  <ng-content select=\"[icon]\"> </ng-content>\n</button>\n"
+        },
+        {
+            "name": "DesignSystemComponent",
+            "id": "component-DesignSystemComponent-a2e490784ac8ff77f91a637b94ec183af5f61b774ed197bf34bfae1c1be2a459efe4a2954d5f98a8cb4eb95aad2fb1072c441d553165e9d5e28b8eef04155f29",
+            "file": "projects/design-system/src/lib/design-system.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-design-system",
+            "styleUrls": [],
+            "styles": [],
+            "template": "<p>\n  design-system works!\n</p>\n",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [
+                {
+                    "name": "ngOnInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 17,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'lib-design-system',\n  template: `\n    <p>\n      design-system works!\n    </p>\n  `,\n  styles: [\n  ]\n})\nexport class DesignSystemComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [],
+                "line": 13
+            },
+            "implements": [
+                "OnInit"
+            ]
+        }
+    ],
+    "modules": [
+        {
+            "name": "DesignSystemModule",
+            "id": "module-DesignSystemModule-ff08ffe836338ca91aa167673487d1d9e775a404be22aa49071231878dbeae0cf637fd85b25d0c7102d28a7201c373e30513edaed3414ab07b2aeb73bd8f1996",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/design-system/src/lib/design-system.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { DesignSystemComponent } from './design-system.component';\n\n@NgModule({\n  declarations: [DesignSystemComponent],\n  imports: [],\n  exports: [DesignSystemComponent],\n})\nexport class DesignSystemModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "DesignSystemComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "DesignSystemComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SweetuiButtonModule",
+            "id": "module-SweetuiButtonModule-642bbc27881fc3f3c1236a2bbed7128d30aa1a6485ed80b2b152bff27ab626b49b277272c73f0567e5e2a85288b3416d5d0780b579e9ceac53120f48fa256758",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/design-system/src/lib/components/sweetui-button/sweetui-button.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { ButtonComponent } from './button/button.component';\n\n\n\n@NgModule({\n  declarations: [\n    ButtonComponent\n  ],\n  imports: [\n    CommonModule\n  ]\n})\nexport class SweetuiButtonModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
+                        {
+                            "name": "ButtonComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "SweetuiInputModule",
+            "id": "module-SweetuiInputModule-710521efba681e21d1f5e28dd55a4bf0a3f7e59dbf4103adf71bdbeefeb763965f481a2f9a482e68f1b03b4e4f0a2a899ce2d76fca95806124957f738228cb9e",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/design-system/src/lib/components/sweetui-input/sweetui-input.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\n\n\n\n@NgModule({\n  declarations: [],\n  imports: [\n    CommonModule\n  ]\n})\nexport class SweetuiInputModule { }\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": []
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": []
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        }
+    ],
+    "miscellaneous": {
+        "variables": [
+            {
+                "name": "context",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/design-system/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+            },
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Disabled",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Error",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "require",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/design-system/src/test.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "literal type"
+            },
+            {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Success",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "TemplateWithIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<ButtonComponent>",
+                "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: `\n    <sweetui-button\n      action=\"${args.color}\"\n      size=\"${args.size}\"\n      label=\"${args.label}\"\n      type=\"${args.type}\"\n      (onClick)=\"onClick($event)\"\n    >\n    <span icon>⚛️</span>\n    </sweetui-button>\n`,\n})"
+            },
+            {
+                "name": "Warning",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "WithIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "TemplateWithIcon.bind({})"
+            }
+        ],
+        "functions": [],
+        "typealiases": [],
+        "enumerations": [],
+        "groupedVariables": {
+            "projects/design-system/src/test.ts": [
+                {
+                    "name": "context",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "require.context('./', true, /\\.spec\\.ts$/)"
+                },
+                {
+                    "name": "require",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/design-system/src/test.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "literal type"
+                }
+            ],
+            "stories/Button.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Disabled",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Error",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Success",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n})"
+                },
+                {
+                    "name": "TemplateWithIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<ButtonComponent>",
+                    "defaultValue": "(args: ButtonComponent) => ({\n  props: args,\n  template: `\n    <sweetui-button\n      action=\"${args.color}\"\n      size=\"${args.size}\"\n      label=\"${args.label}\"\n      type=\"${args.type}\"\n      (onClick)=\"onClick($event)\"\n    >\n    <span icon>⚛️</span>\n    </sweetui-button>\n`,\n})"
+                },
+                {
+                    "name": "Warning",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "WithIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "TemplateWithIcon.bind({})"
+                }
+            ]
+        },
+        "groupedFunctions": {},
+        "groupedEnumerations": {},
+        "groupedTypeAliases": {}
+    },
+    "routes": [],
+    "coverage": {
+        "count": 4,
+        "status": "low",
+        "files": [
+            {
+                "filePath": "projects/design-system/src/lib/components/sweetui-button/button/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 63,
+                "coverageCount": "7/11",
+                "status": "good"
+            },
+            {
+                "filePath": "projects/design-system/src/lib/design-system.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "DesignSystemComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/3",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/lib/design-system.service.ts",
+                "type": "injectable",
+                "linktype": "injectable",
+                "name": "DesignSystemService",
+                "coveragePercent": 0,
+                "coverageCount": "0/2",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "context",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/design-system/src/test.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "require",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Disabled",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Error",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Success",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TemplateWithIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Warning",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "WithIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            }
+        ]
+    }
+}

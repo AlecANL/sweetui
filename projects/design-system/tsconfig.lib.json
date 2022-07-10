@@ -2,10 +2,6 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "./",
-    "paths": {
-      "@components/*": ["projects/design-system/src/lib/components/**"]
-    },
     "outDir": "../../out-tsc/lib",
     "declaration": true,
     "declarationMap": true,
