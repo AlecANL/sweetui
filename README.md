@@ -1,6 +1,7 @@
 # Sweetui - Components Library
 
-[![Github Workflow Status]((https://img.shields.io/github/workflow/status/AlecANL/sweetui/Release)](https://github.com/AlecANL/sweetui/actions/workflows/release.yml) [![storybook](https://raw.githubusercontent.com/storybooks/brand/main/badge/badge-storybook.svg)](https://github.com/storybooks/storybook)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/AlecANL/sweetui/Release)](https://github.com/AlecANL/sweetui/actions/workflows/release.yml) [![Codecov](https://img.shields.io/codecov/c/github/AlecANL/sweetui)](https://app.codecov.io/gh/AlecANL/sweetui)
+[![storybook](https://raw.githubusercontent.com/storybooks/brand/main/badge/badge-storybook.svg)](https://github.com/storybooks/storybook)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
@@ -10,7 +11,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.c
 
 ## Build
 
