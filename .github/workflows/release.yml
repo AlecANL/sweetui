@@ -21,4 +21,3 @@ jobs:
         run: yarn test:ci
       - name: Build storybook
         run: yarn build-storybook
-○
