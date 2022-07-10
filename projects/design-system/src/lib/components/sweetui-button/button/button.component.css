@@ -1,0 +1,112 @@
+.sweetui-button-size {
+  --sweetui-inlineSize-xs: 9rem;
+  --sweetui-inlineSize-md: 12rem;
+  --sweetui-inlineSize-base: 14rem;
+  --sweetui-inlineSize-lg: 15rem;
+  --sweetui-inlineSize-xl: 18rem;
+  --sweetui-fontSize-xs: 0.875rem;
+  --sweetui-fontSize-base: 1rem;
+  --sweetui-fontSize-sm: 1.25rem;
+  --sweetui-fontSize-md: 1.5rem;
+  --sweetui-fontSize-lg: 2.25rem;
+  --gray: #fff;
+}
+
+.sweetui-button-color {
+  --light-gray400: #eaeaea;
+  --light-gray500: #a2a2a2;
+  --dark-gray400: #666666;
+  --dark-gray500: #333333;
+  --just-white: #fff;
+  --primary: #0070f3;
+  --secondary: #7928ca;
+  --success: #17c964;
+  --warning: #f5a623;
+  --error: #f21361;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  line-height: 1;
+  inline-size: auto;
+}
+.button:not(:disabled):active {
+  transform: scale(0.98);
+}
+.button:disabled {
+  color: var(--light-gray500);
+  background-color: var(--light-gray400);
+  font-size: var(--sweet-fontSize-base);
+  cursor: not-allowed;
+}
+.type--default {
+  color: var(--just-white);
+  background-color: var(--primary);
+}
+.type--primary {
+  color: var(--just-white);
+  background-color: var(--primary);
+}
+.type--secondary {
+  color: var(--just-white);
+  background-color: var(--secondary);
+}
+
+.type--success {
+  color: var(--just-white);
+  background-color: var(--success);
+}
+
+.type--error {
+  color: var(--just-white);
+  background-color: var(--error);
+}
+
+.type--warning {
+  color: var(--just-white);
+  background-color: var(--warning);
+}
+
+.sweetui-button--small {
+  font-size: var(--sweet-fontSize-xs);
+  min-inline-size: var(--sweetui-inlineSize-xs);
+  padding: 10px 16px;
+}
+.sweetui-button--default {
+  font-size: var(--sweetui-fontSize-base);
+  min-inline-size: var(--sweetui-inlineSize-base);
+  line-height: 2.5rem;
+  padding-inline: 20px;
+}
+.sweetui-button--medium {
+  font-size: var(--sweetui-fontSize-md);
+  min-inline-size: var(--sweetui-inlineSize-md);
+  padding: 11px 20px;
+}
+.sweetui-button--large {
+  font-size: var(--sweetui-fontSize-md);
+  min-inline-size: var(--sweetui-inlineSize-lg);
+  padding-inline: 24px;
+  line-height: 2.75rem;
+}
+.sweetui-button--extra-large {
+  font-size: var(--sweet-fontSize-sm);
+  min-inline-size: var(--sweetui-inlineSize-xl);
+  line-height: 3.5rem;
+  padding-inline: 20px;
+}
+
+.sweetui-button--auto {
+  font-size: var(--sweet-fontSize-base);
+  min-inline-size: min-content;
+  line-height: 2.5rem;
+  padding-inline: 1.25rem;
+}

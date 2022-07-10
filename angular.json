@@ -11,7 +11,7 @@
       "projectType": "library",
       "root": "projects/design-system",
       "sourceRoot": "projects/design-system/src",
-      "prefix": "lib",
+      "prefix": "sweetui",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
@@ -35,6 +35,20 @@
             "tsConfig": "projects/design-system/tsconfig.spec.json",
             "karmaConfig": "projects/design-system/karma.conf.js"
           }
+        }
+      }
+    }
+  },
+  "storybook": {
+    "projectType": "application",
+    "root": "stories",
+    "sourceRoot": "stories",
+    "architect": {
+      "build": {
+        "options": {
+          "tsConfig": "tsconfig.json",
+          "styles": [],
+          "scripts": []
         }
       }
     }

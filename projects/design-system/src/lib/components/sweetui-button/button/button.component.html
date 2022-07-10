@@ -1,0 +1,10 @@
+<button
+  [id]="id ? id : ''"
+  [disabled]="isDisabled"
+  [type]="type"
+  (click)="handleClick($event)"
+  [ngClass]="className"
+>
+  <span> {{ label }} </span>
+  <ng-content select="[icon]"> </ng-content>
+</button>
