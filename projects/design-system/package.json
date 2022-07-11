@@ -1,11 +1,21 @@
 {
-  "name": "design-system",
+  "name": "ngx-sweetui",
   "version": "0.0.1",
+  "private": false,
   "peerDependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"
+  },
+  "author": {
+    "name": "alexei",
+    "email": "alexeialvarez4@gmail.com",
+    "url": "https://sweetui.vercel.app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alecanl/sweetui"
   }
 }
