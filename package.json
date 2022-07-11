@@ -1,6 +1,11 @@
 {
   "name": "sweetui",
   "version": "0.0.0",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

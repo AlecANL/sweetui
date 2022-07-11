@@ -1,6 +1,11 @@
 {
   "name": "ngx-sweetui",
   "version": "0.0.1",
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
   "private": false,
   "peerDependencies": {
     "@angular/common": "^14.0.0",
