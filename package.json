@@ -13,7 +13,7 @@
     "chromatic": "npx chromatic --project-token=31fe23d73517",
     "build:docs": "yarn build-storybook --docs --no-manager-cache",
     "test:ci": "yarn test -- --no-watch --browsers=ChromeHeadlessCI",
-    "test:coverage": "yarn test -- --no-watch  --code-coverage --browsers=ChromeHeadlessCI",
+    "test:coverage": "rm -rf coverage &&  yarn test -- --no-watch  --code-coverage --browsers=ChromeHeadlessCI",
     "build:storybook": "yarn build-storybook "
   },
   "private": true,
