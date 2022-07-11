@@ -37,9 +37,7 @@ jobs:
       - name: Run coverage test
         run: yarn test:coverage
       - name: Upload coverage
-        uses: codecov/codecov-action@v1
-         with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+        uses: codecov/codecov-action@v3
   visual:
     name: Visual Testing
     if: "!contains(github.event.head_commit.message, 'skip ci')"

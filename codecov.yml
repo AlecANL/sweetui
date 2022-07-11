@@ -1,2 +1,4 @@
 github_checks:
   annotations: false
+  with:
+  token: ${{ secrets.CODECOV_TOKEN }}
